@@ -12,6 +12,8 @@
 
 ## Controles
 
-Se salta con la barra espaciadora
+Se salta con la barra espaciadora.
 
-Deploy: https://jersonsilvaa.github.io/donosaurio-chrome/
+Para reiniciar el juego se refresca la página.
+
+## Deploy: https://jersonsilvaa.github.io/donosaurio-chrome/
