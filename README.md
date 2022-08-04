@@ -13,3 +13,5 @@
 ## Controles
 
 Se salta con la barra espaciadora
+
+Deploy: https://jersonsilvaa.github.io/donosaurio-chrome/
