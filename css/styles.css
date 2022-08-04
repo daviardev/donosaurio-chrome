@@ -1,0 +1,144 @@
+:root {
+    --position-x: -252px;
+    --position-px: 42px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background: rgb(41, 41, 41);
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(#383838, #555555);
+    height: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 920px;
+}
+
+.rex {
+    background-position-x: 0px;
+    background: url('../img/dino.png') repeat-x 0px 0px;
+    bottom: 22px;
+    height: 84px;
+    left: var(--position-px);
+    position: absolute;
+    width: 84px;
+    z-index: 2;
+}
+
+.mediodia {
+    background-color: #ffdcd3;
+}
+
+.tarde {
+    background-color: #ffadad;
+}
+
+.noche {
+    background-color: #aca8c7;
+}
+
+.dificil {
+    background-color: rgb(168, 47, 47);
+}
+
+.ultradificil {
+    background-color: #927e7e;
+}
+
+.megadificil {
+    background-color: #555555;
+}
+
+.giga {
+    background-color: #383838;
+}
+
+.gigachad {
+    background-color: #000;
+}
+
+.rex-run {
+    animation: animationRun 0.25s steps(2) infinite;
+}
+
+.rex__crash {
+    background-position-x: var(--position-x);
+}
+
+.ground {
+    background-size: 50% var(--position-px);
+    background: url('../img/suelo.png') repeat-x 0px 0px;
+    bottom: 0;
+    height: var(--position-px);
+    left: 0;
+    position: absolute;
+    width: 200%;
+}
+
+.score {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    text-align: right;
+    top: 5px;
+    width: 100px;
+    z-index: 10;
+}
+
+.cactus {
+    background: url('../img/cactus1.png') no-repeat;
+    bottom: 16px;
+    height: 96px;
+    left: 600px;
+    position: absolute;
+    width: 46px;
+    z-index: 1;
+}
+
+.cactus2 {
+    background: url('../img/cactus2.png') no-repeat;
+    height: 66px;
+    width: 98px;
+}
+
+.game-over {
+    color: #927e7e;
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.weather {
+    background-size: 92px 26px;
+    background: url('../img/nube.png') no-repeat;
+    height: 26px;
+    position: absolute;
+    width: 92px;
+    z-index: 0;
+}
+
+@keyframes animationRun {
+    from {
+        background-position-x: -84px;
+    }
+    to {
+        background-position-x: var(--position-x);
+    }
+}
